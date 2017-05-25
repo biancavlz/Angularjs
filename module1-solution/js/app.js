@@ -11,7 +11,10 @@
         if($scope.menu.split(',').length <= 3) {
           $scope.message = "Enjoy!";
           $scope.notice = "success";
-        } else {$scope.message = "Too much!";}
+        } else {
+          $scope.message = "Too much!";
+          $scope.notice = "success";
+        }
       } else {
         $scope.message = "Please enter data first";
         $scope.notice = "danger";
