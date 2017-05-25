@@ -18,11 +18,11 @@
         class="form-control">
       </div>
       <div class="form-group">
-        <button class="btn btn-default" ng-click="addLunchItems()">
+        <button class="btn btn-primary" ng-click="addLunchItems()">
           Check If Too Much
         </button>
       </div>
-      <div class="form-group message">
+      <div class="form-group message alert alert-{{notice}}">
         {{ message }}
       </div>
     </div>
