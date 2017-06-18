@@ -1,10 +1,11 @@
 <div>
-	Categories list
-	<ul>
-		<li ng-repeat="category in categoriesController.categories" >
-			<a ui-sref="items({categoryName: category.short_name})">
-				{{ category.name }}
-			</a>
+	<h1>Categories list</h1>
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="category in categoriesController.categories" >
+			{{ category.name }}
+			<button type="button" class="list-group-item list-group-item-action list-group-item-info" ui-sref="items({categoryName: category.short_name})">
+				Go to items list for {{ category.name }}
+			</button>
 		</li>
 	</ul>
 </div>
