@@ -62,6 +62,38 @@
   box-shadow: 0 1px 5px 1px #cccccc;
 }
 
+/* USER INFORMATION */
+.information {
+  color: black;
+  background: #f6b319;
+  border: 2px solid #fff;
+}
+
+.information span {
+  font-weight: bold;
+}
+
+.user-information .menu-item-photo{
+  position: relative;
+  margin: auto;
+}
+.panel-default > .panel-heading {
+  background: #f6b319;
+  color:#951C49;
+  border: 2px solid #fff;
+}
+
+.form {
+  background-color: #f6b319;
+  border-radius: 4px 4px 0 0;
+  border: 2px solid #fff;
+  color:#951C49;
+} 
+
+.form button {
+  margin-bottom: 10px;
+}
+
 #menu-categories-title + div {
   margin-bottom: 50px;
 }
