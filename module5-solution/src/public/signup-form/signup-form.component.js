@@ -20,7 +20,7 @@ function SignUpFormController(MenuService, UserService) {
       $ctrl.wrongMenuItem = false;
       $ctrl.user.item = result;      
       UserService.setUser($ctrl.user);
-      $ctrl.resultMessage = "Your information is saved, click on My Info to see it";
+      $ctrl.resultMessage = "Your information has been saved, click on My Info to see it";
     })
     .catch(function(result){
       $ctrl.wrongMenuItem = true;

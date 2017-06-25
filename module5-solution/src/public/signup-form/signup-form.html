@@ -1,14 +1,5 @@
 <form name="regForm" novalidate>
   <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" name="email" placeholder="Email address" ng-model="$ctrl.user.email"
-    required>
-    <span ng-if="regForm.email.$invalid && regForm.email.$touched">
-      Type a valid email address: example@domain.com
-    </span>
-  </div>
-
-  <div class="form-group">
     <label for="firstName">First name</label>
     <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First name" ng-model="$ctrl.user.firstName"
      required minlength="4" ng-maxlength="14">
@@ -23,6 +14,15 @@
      required minlength="4" ng-maxlength="14">
     <span ng-if="regForm.lastName.$invalid && regForm.lastName.$touched">
       Type a Name with at least 4 characters and maximum 14 characters
+    </span>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Email address" ng-model="$ctrl.user.email"
+    required>
+    <span ng-if="regForm.email.$invalid && regForm.email.$touched">
+      Type a valid email address: example@domain.com
     </span>
   </div>
 
