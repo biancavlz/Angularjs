@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="information panel panel-default">
+
+        <div class="panel-heading">
+          <h2 id="menu-categories-title" class="text-center">User information
+          </h2>
+        </div>
+
+        <div class="panel-body text-center" ng-if="!vm.user">
+          <p>In order to see your user information, you need to Sign Up.</p>
+          <p>Click on the below button to Sign up.</p>
+          <a ui-sref="public.signup" class="btn btn-default">
+            Sign up
+          </a>
+        </div>
+
+        <ul class="list-group user-information" ng-if="vm.user">
+          <li class="list-group-item"><span>User:</span> {{ vm.user.firstName }} {{ vm.user.lastName }}</li>
+          <li class="list-group-item"><span>E-mail:</span> {{ vm.user.email }} </li>
+          <li class="list-group-item"><span>Phone:</span> {{ vm.user.phone }} </li>
+          <li class="list-group-item"><span>Menu name:</span> {{ vm.user.item.name }} </li> 
+          <li class="list-group-item"><span>Menu description:</span> {{ vm.user.item.description }} </li> 
+          <li class="list-group-item">
+            <div class="menu-item-photo" ng-if="vm.user">
+              <img class="img-responsive" width="250" height="150" ng-src="{{vm.basePath}}/images/{{vm.user.item.short_name}}.jpg" alt="{{$ctrl.user.item.name}}">
+              <div>{{vm.user.item.short_name}}</div>
+            </div>
+          </li>
+        </ul> 
+
+      </div>
+    </div>
+  </div>
+</div>
